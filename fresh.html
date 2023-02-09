@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+    <title>Great Eastern Seafood</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="GE Seafood">
+    <meta name="keywords" content="great eastern seafood, seafood, fresh, frozen, fish, fishing, UK fishing">
+    <meta name="author" content="GE Seafood">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/sea-food/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/sea-food/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sea-food/logo.png">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css" />
+  <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+  <!-- Page loading styles-->
+  <style>
+    .cs-page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .4s .2s ease-in-out;
+      transition: all .4s .2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    .cs-page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cs-page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      opacity: 0;
+    }
+
+    .cs-page-loading.active>.cs-page-loading-inner {
+      opacity: 1;
+    }
+
+    .cs-page-loading-inner>span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #787a80;
+    }
+
+    .cs-page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      background-color: #cfcfd1;
+      border-radius: 50%;
+      opacity: 0;
+      -webkit-animation: spinner .75s linear infinite;
+      animation: spinner .75s linear infinite;
+    }
+
+    @-webkit-keyframes spinner {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes spinner {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+  </style>
+
+  <!-- Page loading scripts-->
+  <script>
+    (function () {
+      window.onload = function () {
+        var preloader = document.querySelector('.cs-page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 2000);
+      };
+    })();
+  </script>
+</head>
+
+<!-- Body-->
+
+<body>
+
+  <!-- Page loading spinner-->
+  <div class="cs-page-loading active">
+    <div class="cs-page-loading-inner">
+      <div class="cs-page-spinner"></div><span>Loading...</span>
+    </div>
+  </div>
+
+  <!-- Main content-->
+  <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+  <main class="cs-page-wrapper position-relative">
+
+    <!-- Navbar -->
+    <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
+    <header class="cs-header navbar navbar-expand-md navbar-dark navbar-sticky navbar-floating">
+      <div class="container px-0 px-xl-3">
+        <a class="navbar-brand order-md-1 mr-md-5 mr-0 pr-lg-2" href="index.html">
+          <img class="navbar-brand-static" src="assets/img/sea-food/logo.png" alt="GE Seafood Logo" width="90">
+          <img class="navbar-brand-floating" src="assets/img/sea-food/logo.png" alt="GE Seafood Logo" width="70">
+        </a>
+        <div class="d-flex align-items-center order-md-3">
+          <a class="btn btn-primary btn-pill d-sm-inline-block d-none ml-3" href="contacts.html">Contact us</a>
+          <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1"
+            aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <nav class="collapse navbar-collapse order-md-2" id="navbarCollapse1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">History</a></li>
+                <li><a class="dropdown-item" href="about.html#val">Values</a></li>
+                <li><a class="dropdown-item" href="about.html#facilities">Facilities</a></li>
+                <li><a class="dropdown-item" href="about.html#team">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item active" href="fresh.html">Fresh</a></li>
+                <li><a class="dropdown-item" href="frozen.html">Frozen</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="assets/pdf/haccp.pdf" target="_blank">HCCP Letter</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/msc.pdf" target="_blank">MSC Certificate</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/sqf.pdf" target="_blank">SQF Certificate</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blogs</a>
+            </li> -->
+            <li class="nav-item d-sm-none d-block">
+              <a class="nav-link" href="contacts.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Hero -->
+    <section class="jarallax d-flex align-items-stretch min-vh-100 bg-dark mb-2 mb-lg-0 py-5 py-lg-6" data-jarallax
+      data-speed="0.6">
+      <span class="bg-overlay opacity-60"></span>
+      <div class="jarallax-img" style="background-image: url(assets/img/sea-food/products/back.jpg);"></div>
+      <div class="container d-flex flex-column justify-content-between bg-overlay-content mt-5 py-3 pt-md-5 py-lg-3">
+        <div class="d-flex flex-sm-row flex-column align-items-sm-center justify-content-sm-between">
+          <ul class="nav nav-light">
+            <li class="nav-item mr-2">
+              <a class="nav-link d-inline-block mr-2 p-0 font-weight-normal" href="#">
+                Products
+              </a>
+              <span class="text-border">|</span>
+            </li>
+            <li class="nav-item mr-2">
+              <span class="text-light">Fresh</span>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex flex-column justify-content-between h-100 mt-4 mt-md-5 pt-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+              <h1 class="display-1 mb-4 pb-md-3 text-light">Fresh Seafood</h1>
+              <p class="lead text-light">We have created a unique visual system and strategy across the wide existing
+                spectrum to provide you best fresh seafood at ease. Feel free to talk to us. </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+              <a href="#section-goal" data-scroll class="font-size-sm font-weight-bold text-light text-decoration-none">
+                <i class="cxi-arrow-down h4 mt-n1 mr-2 mb-0 text-light align-middle"></i>
+                View products
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Project goal -->
+    <section class="container py-5 py-lg-6 text-center" id="section-goal">
+      <div class="row justify-content-center mb-lg-6 mb-5">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="h6 mb-3 pb-1 text-uppercase">Our goal</h2>
+          <p class="h3 mb-lg-6 mb-5 pb-lg-4">Great Eastern Seafood’s Quality Control Program is a set of guidelines
+            designed by us to ensure that our customers are provided with consistent, quality products. Our program has
+            been designed using the HACCP model and all appropriate federal standards and regulations have all been
+            incorporated. The key factors in our plan are:</p>
+          <div class="row justify-content-between">
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2">Inspection</h3>
+            </div>
+            <span class="divider-vertical d-sm-block d-none"></span>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2">Temperature Control</h3>
+            </div>
+            <span class="divider-vertical d-sm-block d-none"></span>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2">Cleanliness</h3>
+            </div>
+            <span class="divider-vertical d-sm-block d-none"></span>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2 pb-1">Great Shipping Methods</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Challenge -->
+    <section class="container mt-2 mt-lg-0 mb-lg-6 mb-5">
+      <div class="row justify-content-center mb-lg-6 mb-5">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="h6 mb-3 pb-1 text-uppercase">HADDOCK FISH</h2>
+          <p class="mb-0 text-muted">Haddock is a valuable North Atlantic food fish of the cod family, Gadidae, that is
+            often smoked and sold as "Finnan Haddie." The Haddock is a bottom dweller and a carnivore, feeding on
+            invertebrates and some fishes. It resembles the Cod and, like its relative, has a chin barbel, 2 anal fins
+            and 3 dorsal fins. It is identified from Cod by a dark, rather than light, lateral line and a distinctive
+            dark spot on each side of the body over the pectoral fins, often called the "devil's mark". Color is
+            otherwise gray or brownish above, paler below. Size is to about 3 feet (90 cm) and 24.5 pounds (11 kg).
+            Haddock is a popular food fish, widely fished commercially. It is one of the most popular varieties of
+            smoked fish and it has a unique succulent and delicious flavour.</p>
+        </div>
+      </div>
+      <div class="row mb-lg-6 mb-5 text-center">
+        <div class="col-sm-6 mb-sm-0 mb-3">
+          <img class="rounded" src="assets/img/sea-food/products/groundfish.jpg" alt="Project image">
+        </div>
+        <div class="col-sm-6">
+          <img class="rounded" src="assets/img/sea-food/products/haddock.jpg" alt="Project image"
+            style="width: 90% !important;">
+        </div>
+      </div>
+      <div class="row justify-content-center mb-lg-6 mb-5">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="h6 mb-3 pb-1 text-uppercase">FRESH FLAT FISH - (FLOUNDER)</h2>
+          <p class="mb-0 text-muted">Grey sole, also known as witch flounder, are a flat fish with a very small mouth
+            and both eyes on the top side of their body. They are a deep-water fish that are typically brown to grey on
+            top with a vibrant white under belly.</p>
+        </div>
+      </div>
+      <div class="row mb-lg-6 mb-5 text-center">
+        <div class="col-12">
+          <img class="rounded" src="assets/img/sea-food/products/greysole.jpg" alt="Project image">
+        </div>
+      </div>
+      <div class="row justify-content-center mb-lg-6 mb-5">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="h6 mb-3 pb-1 text-uppercase">FRESH SPECIALITY FISH</h2>
+        </div>
+      </div>
+      <div class="row mb-lg-6 mb-5 text-center">
+        <div class="col-12">
+          <img class="rounded" src="assets/img/sea-food/products/speciality.jpg" alt="Project image">
+        </div>
+      </div>
+      <div class="row justify-content-center mb-lg-6 mb-5">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="h6 mb-3 pb-1 text-uppercase">HARD SHELL CLAMS & SHELLFISH</h2>
+          <p class="mb-0 text-muted">Hardshells are the connoisseur’s choice for raw, halfshell clams. They are
+            mild-flavored, sweet and briny. Cooked hardshells are soft, juicy and mild. Raw meat should be tender-crisp
+            and plump, ranging in color from ivory to golden yellow, with some dark areas. Cooked meat is pale,
+            pinkish-white.Hardshells have an off-white, oval, symmetrical shell with a purple or violet border inside.
+            Discard clams with open or broken shells. Unlike softshells, hardshell clams can close their shells
+            completely and “live on their own juices” for a time, giving them a longer shelf life out of water than
+            softshells.</p>
+        </div>
+      </div>
+      <div class="row mb-lg-6 mb-5 text-center">
+        <div class="col-12">
+          <img class="rounded" src="assets/img/sea-food/products/greysole.jpg" alt="Project image">
+        </div>
+      </div>
+      <div class="row justify-content-center mb-lg-6 mb-5">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="h6 mb-3 pb-1 text-uppercase">The Black Sea Bass fish</h2>
+          <p class="mb-0 text-muted">The Black Sea Bass live near rock outcrops and shallow, rocky bottoms. Typically
+            large-mouthed, bottom dwellers that are bluish black in color with light spots that form longitudinal
+            stripes. Their scales are relatively large and their dorsal fin is continuous, but notched with 10 slender
+            spines. This spike-finned fish changes sex over its lifetime: it starts out a female and becomes male as it
+            grows older and larger. Black sea bass can reach up to 3 feet (91 cm) in length. Sea bass has firm flesh and
+            tasty skin.</p>
+        </div>
+      </div>
+      <div class="row mb-lg-6 mb-5 text-center">
+        <div class="col-12">
+          <img class="rounded" src="assets/img/sea-food/products/black.png" alt="Project image"
+            style="width: 30%;">
+        </div>
+      </div>
+      <div class="row text-center justify-content-center">
+        <h3 class="text-center">Full List of Fresh Products</h3>
+      </div>
+      <div class="row sqs-row">
+
+
+        <div class="col sqs-col-3 span-3">
+          <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+            id="block-yui_3_17_2_6_1519401672472_14291">
+            <div class="sqs-block-content">
+
+              <ul>
+                <li>Albacore</li>
+                <li>Arctic Char</li>
+                <li>Barramundi</li>
+                <li>Black Sea Bass</li>
+                <li>Blackback</li>
+                <li>Black Cod (Sable Fish)</li>
+                <li>Bluefish</li>
+                <li>Branzini (Medit. Sea Bass)</li>
+                <li>Butterfish</li>
+                <li>Carp</li>
+                <li>Catfish (Freshwater)</li>
+                <li>Catfish (Ocean)</li>
+                <li>Chilean Sea Bass</li>
+                <li>Clams</li>
+                <li>Cockles</li>
+                <li>Cod</li>
+                <li>Corvina</li>
+                <li>Crab (Live)</li>
+                <li>Crabmeat</li>
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col sqs-col-3 span-3">
+          <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+            id="block-yui_3_17_2_6_1519401672472_82490">
+            <div class="sqs-block-content">
+
+              <ul>
+                <li>Croaker</li>
+                <li>Cusk</li>
+                <li>Dab</li>
+                <li>Dorade (Medit. Sea Bream)</li>
+                <li>Escolar</li>
+                <li>Fluke</li>
+                <li>Flounder</li>
+                <li>Greysole</li>
+                <li>Grouper</li>
+                <li>Haddock</li>
+                <li>Hake</li>
+                <li>Halibut</li>
+                <li>Herring</li>
+                <li>Hybrid Striped Bass</li>
+                <li>John Dory</li>
+                <li>Kingklip (Conger Eel)</li>
+                <li>Lake Victoria Perch</li>
+                <li>Lobster (Live)</li>
+                <li>Mackerel</li>
+                <li>Mahi</li>
+                <li>Marlin</li>
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col sqs-col-3 span-3">
+          <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+            id="block-yui_3_17_2_6_1519401672472_85033">
+            <div class="sqs-block-content">
+
+              <ul>
+                <li>Monkfish</li>
+                <li>Mullet</li>
+                <li>Mussels</li>
+                <li>Oil Fish</li>
+                <li>Opah</li>
+                <li>Oysters</li>
+                <li>Perch</li>
+                <li>Periwinkle</li>
+                <li>Pike</li>
+                <li>Pollock</li>
+                <li>Red Fish</li>
+                <li>Sable Fish (Black Cod)</li>
+                <li>King Salmon</li>
+                <li>Atlantic Salmon</li>
+                <li>Salt Cod</li>
+                <li>Sardines</li>
+                <li>Scallops</li>
+                <li>Scup</li>
+                <li>Sea Bream</li>
+                <li>Seatrout/Weakfish</li>
+                <li>Shad</li>
+                <li>Shark</li>
+                <li>Shrimp</li>
+                <li>Skate</li>
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="col sqs-col-3 span-3">
+          <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+            id="block-yui_3_17_2_6_1519401672472_88489">
+            <div class="sqs-block-content">
+
+              <ul>
+                <li>Skipjack</li>
+                <li>Smelts</li>
+                <li>Snapper</li>
+                <li>Soft Shell Crab</li>
+                <li>Sole</li>
+                <li>Spanish Mackerel</li>
+                <li>Squid</li>
+                <li>Steelhead</li>
+                <li>Striped Bass Wild</li>
+                <li>Sturgeon&nbsp;</li>
+                <li>Swordfish</li>
+                <li>Tautog</li>
+                <li>Tilapia</li>
+                <li>Tile</li>
+                <li>Trout</li>
+                <li>Tuna</li>
+                <li>Turbot</li>
+                <li>Wahoo</li>
+                <li>Whitefish</li>
+                <li>Whiting</li>
+                <li>Yellowtail Flounder</li>
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main><!-- / Main content: .cs-page-wrapper -->
+
+
+  <!-- Footer -->
+  <footer class="cs-footer pt-3 bg-dark" style="background-color: #071d49 !important;">
+    <div class="container py-lg-5 py-4">
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-12 order-md-1 order-2 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Want to hire us?</h3>
+          <ul class="nav nav-light flex-column">
+            <li class="nav-item mb-2">
+              <a href="tel:(405)555-0128" class="nav-link p-0 font-weight-normal">
+                <span class="text-light">Call: </span>
+                617-428-9400
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="mailto:hello@example.com" class="nav-link p-0 font-weight-normal">
+                <span class="text-light">Email: </span>
+                hello@example.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 order-md-2 order-1 offset-lg-1 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Quick links</h3>
+          <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Homepage</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="about.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">About</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="fresh.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Products</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="blog.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Blog</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="contacts.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 order-md-3 order-sm-4 order-3 offset-lg-1 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Follow us</h3>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-facebook"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-instagram"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-twitter"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-behance"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-dribbble"></i>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 order-md-4 order-sm-3 order-4 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Subscribe</h3>
+          <form>
+            <div class="input-group-overlay input-group-light form-group mb-2 pb-1">
+              <input class="form-control appended-form-control" type="text" placeholder="Email address*">
+              <div class="input-group-append-overlay">
+                <span class="input-group-text">
+                  <button class="btn btn-link bt-sm px-0" type="submit">
+                    <i class="cxi-arrow-right lead mt-n1"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <small class="form-text text-light">*Subscribe to our newsletter to receive early discount offers, updates
+              and new products info.</small>
+          </form>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-2 pt-1">
+        <div class="text-light">
+          <span class="d-block font-size-xs mb-1">
+            <span class="font-size-sm">&copy; </span>
+            Copyright © Great Eastern Seafood.
+          </span>
+        </div>
+        <div class="d-flex align-items-end">
+          <span class="d-sm-inline-block d-none text-light font-size-sm mr-3">Back to top</span>
+          <a class="btn-scroll-top position-static rounded-circle" href="#top" data-scroll>
+            <i class="btn-scroll-top-icon cxi-angle-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Vendor scripts: js libraries and plugins-->
+  <script src="assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+  <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+  <script src="assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+
+  <!-- Main theme script-->
+  <script src="assets/js/theme.min.js"></script>
+</body>
+
+</html>

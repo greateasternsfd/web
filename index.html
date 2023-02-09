@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Great Eastern Seafood</title>
+
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Great Eastern Seafood">
+    <meta name="keywords" content="great eastern seafood, seafood, fresh, frozen, fish, seafood wholesale, boston, ">
+    <meta name="author" content="ashdownweb">
+
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/sea-food/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/sea-food/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sea-food/logo.png">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css"/>
+
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+    
+    <!-- Page loading styles-->
+    <style>
+      .bg-kala{
+        background-color: #000 !important;
+      }
+      .cs-page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .cs-page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .cs-page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .cs-page-loading.active > .cs-page-loading-inner {
+        opacity: 1;
+      }
+      .cs-page-loading-inner > span {
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #787a80;
+      }
+      .cs-page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #cfcfd1; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.cs-page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+    </script>
+  </head>
+
+  <!-- Body-->
+  <body>
+
+    <!-- Page loading spinner-->
+    <div class="cs-page-loading active">
+      <div class="cs-page-loading-inner">
+        <div class="cs-page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+
+    <!-- Main content-->
+    <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+    <main class="cs-page-wrapper position-relative">
+      
+
+      <!-- Navbar -->
+      <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
+      <header class="cs-header navbar navbar-expand-md navbar-dark navbar-sticky navbar-floating">
+        <div class="container px-0 px-xl-3">
+          <a class="navbar-brand order-md-1 mr-md-5 mr-0 pr-lg-2" href="index.html">
+            <img class="navbar-brand-static" src="assets/img/sea-food/logo.png" alt="GE Seafood Logo" width="90">
+            <img class="navbar-brand-floating" src="assets/img/sea-food/logo.png" alt="GE Seafood Logo" width="70">
+          </a>
+          <div class="d-flex align-items-center order-md-3">
+            <a class="btn btn-primary btn-pill d-sm-inline-block d-none ml-3" href="contacts.html">Contact us</a>
+            <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1" aria-expanded="false">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <nav class="collapse navbar-collapse order-md-2" id="navbarCollapse1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">History</a></li>
+                  <li><a class="dropdown-item" href="about.html#val">Values</a></li>
+                  <li><a class="dropdown-item" href="about.html#facilities">Facilities</a></li>
+                  <li><a class="dropdown-item" href="about.html#team">Team</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="fresh.html">Fresh</a></li>
+                  <li><a class="dropdown-item" href="pfrozen.html">Previously Frozen</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Resources</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="assets/pdf/haccp.pdf" target="_blank">HACCP Letter</a></li>
+                  <li><a class="dropdown-item" href="assets/pdf/msc.pdf" target="_blank">MSC Certificate</a></li>
+                  <li><a class="dropdown-item" href="assets/pdf/sqf.pdf" target="_blank">SQF Certificate</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blogs</a>
+              </li> -->
+              <li class="nav-item d-sm-none d-block">
+                <a class="nav-link" href="contacts.html">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+
+      <!-- Hero-->
+      <section class="jarallax d-flex align-items-stretch min-vh-100 bg-kala overflow-hidden pt-5" data-jarallax data-speed="0.5">
+        <div class="jarallax-img bg-overlay" style="background-image: url(assets/img/sea-food/home/hero-bg.jpg);"></div>
+        <div class="container d-flex flex-column justify-content-around pt-5 pt-sm-4 pb-5">
+          <div class="row mt-md-5 pt-sm-5">
+            <div class="col-lg-10 col-md-10 order-md-1 order-2 text-md-left text-center">
+              
+              <h1 class="mb-lg-5 mb-4 pb-2 display-1 text-light">Honesty. Loyalty.<br>Service. Respect.<br>Promises delivered for <br><span class="text-primary">40 years</span> and counting.</h1>
+              <h1 class="mb-lg-5 mb-4 pb-2 display-1 text-light"></h1>
+              <a href="fresh.html" class="mb-lg-0 mb-5 btn btn-lg btn-primary btn-pill" data-scroll>View Products</a> <!-- Need to update this link-->
+            </div>
+            
+          </div>
+          <div class="row d-md-flex d-none align-items-center mt-lg-5">
+            
+            
+            <div class="offset-md-10 col-2">
+              <div class="text-right">
+                <span class="">
+                  <a href="#mission" data-scroll class="d-flex text-right align-items-center justify-content-center font-size-sm font-weight-bold text-light text-decoration-none">
+                    <i class="cxi-arrow-down h4 mr-2 mb-0 text-light"></i>
+                    Scroll down
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Mission -->
+      <section id="mission" class="container py-lg-6 py-5 my-3 mt-lg-1 mb-sm-5">
+        <h3 class="h1 mb-lg-5 mb-4 text-uppercase">What we do</h3>
+        <div class="row">
+          <div class="col-lg-7 col-md-6">
+            <p class="h5 mb-3 pb-1 line-height-base">For 40 years and counting, Great Eastern Seafood has been fostering relationships with its customers and vendors through a steadfast commitment to quality and processing seafood the right way.</p>
+            <p class="h5 mb-3 pb-1 line-height-base">Honesty, Loyalty, Respect, and Service are not just buzz words. They are the backbone of Great Eastern Seafood and the promise we make to our customers, our vendors, and the industry as a whole. We back up these promises on a daily basis by utilizing decades-long relationships to acquire the freshest, highest quality seafood possible. </p>
+            <p class="h5 mb-3 pb-1 line-height-base">Our commitment extends beyond our customers and our vendors, at Great Eastern Seafood we know our team is our most valuable asset and its a priorty to ensure everyone feels like a member of the family.</p>
+          </div>
+          <div class="col-lg-5 col-md-6 overflow-hidden">
+            <img src="assets/img/sea-food/home/hero-image/012.jpg">
+          </div>
+        </div>  
+      </section>
+
+
+      <!-- Approach -->
+      <section class="pt-lg-3 pb-4">
+        <div class="container">
+          <h3 class="h6 mb-2 text-uppercase">Sourced from</h3>
+          <h2 class="h1 mb-lg-5 mb-4">New England and Beyond</h2>
+        </div>
+
+        <!-- Carousel -->
+        <div class="container px-0">
+          <div class="cs-carousel cs-nav-outside mt-n4 ml-lg-n5">
+            <div class="cs-carousel-inner pt-4 pl-lg-5" data-carousel-options='{
+              "loop": false,
+              "controls": false,
+              "responsive": {
+                "0": {
+                  "items": 1
+                },
+                "576": {
+                  "items": 2
+                },
+                "768": {
+                  "items": 3
+                },
+                "992": {
+                  "items": 4
+                }
+              }
+            }'>
+
+              <!-- Horizontal step item -->
+              <div class="cs-step pt-2 px-3">
+                <div class="cs-step-head mb-3">
+                  <span class="cs-step-indicator">01</span>
+                  <span class="cs-step-line"></span>
+                </div>
+                <div class="cs-step-body">
+                  <h3 class="h5 mb-2">Local Roots</h3>
+                  <p class="mb-0 text-muted">Over the last 40 years we have built and sustained relationships with local boat owners and allies in the industry. Through these relationships we are able to keep our finger on the pulse when it comes to knowing the availability of species in advance so we can pass that information on to our customers.</p>
+                </div>
+              </div>
+
+              <!-- Horizontal step item -->
+              <div class="cs-step pt-2 px-3">
+                <div class="cs-step-head mb-3">
+                  <span class="cs-step-indicator">02</span>
+                  <span class="cs-step-line"></span>
+                </div>
+                
+                <div class="cs-step-body">
+                  <h3 class="h5 mb-2">Display Auctions</h3>
+                  <p class="mb-0 text-muted">Holding seats on the major seafood display auctions in Gloucester, New Bedford, and Portland necessitate the need to employ local inspectors so our buyers are completly aware of the quality of the fish before we buy a pound.</p>
+                </div>
+              </div>
+
+              <!-- Horizontal step item -->
+              <div class="cs-step pt-2 px-3">
+                <div class="cs-step-head mb-3">
+                  <span class="cs-step-indicator">03</span>
+                  <span class="cs-step-line"></span>
+                </div>
+                <div class="cs-step-body">
+                  <h3 class="h5 mb-2">Iceland</h3>
+                  <p class="mb-0 text-muted">We have been working directly with the people who own the boats and the fish quota to ensure a steady supply of fresh seafood, including Icelandic Haddock, Cod, and Plaice, throughout the year.</p>
+                </div>
+              </div>
+
+              <!-- Horizontal step item -->
+              <div class="cs-step pt-2 px-3">
+                <div class="cs-step-head mb-3">
+                  <span class="cs-step-indicator">04</span>
+                </div>
+                <div class="cs-step-body">
+                  <h3 class="h5 mb-2">And Beyond</h3>
+                  <p class="mb-0 text-muted">Just like our local relationships, we have been fortunate to meet like-minded companies around the world that export seafood to the United States. It is common for Great Eastern Seafood to have seafood offerings from the likes of Canada, Norway, Panama, Brazil, Chile, Faroe Islands, Hawaii, Costa Rica, and even Australia. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Services -->
+      <section class="container py-lg-6 mb-md-3 mb-lg-0 py-5">
+        <h3 class="h6 mb-2 text-uppercase">Processing</h3>
+        <h2 class="h1 mb-lg-4 mb-2 pb-3">How we do it</h2>
+        <div class="row align-items-center">
+          <div class="col-md-5 order-md-1 order-2">
+
+            <!-- Accordion made of cards -->
+            <div class="accordion" id="accordionServices">
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header pt-0" id="servicesHeadingOne">
+                  <h3 class="accordion-heading">
+                    <a href="#servicesCollapseOne" role="button" data-toggle="collapse" data-binded-content="#identity" aria-expanded="true" aria-controls="servicesCollapseOne">
+                      <span class="accordion-indicator"></span>
+                      Setting a Standard
+                    </a>
+                  </h3>
+                </div>
+                <div class="collapse show" id="servicesCollapseOne" aria-labelledby="servicesHeadingOne" data-parent="#accordionServices">
+                  <div class="card-body">
+                    Whether we are talking about the local inspectors we work with at each display auction, the boats and vendors from around the world, Great Eastern Seafood adheres to a high standard when sourcing our seafood offerings. If we wouldn't feed it to our families, we won't ship it to our customers.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="servicesHeadingTwo">
+                  <h3 class="accordion-heading">
+                    <a href="#servicesCollapseTwo" role="button" data-toggle="collapse" data-binded-content="#web" aria-expanded="false" aria-controls="servicesHeadingTwo" class="collapsed">
+                      <span class="accordion-indicator"></span>
+                      Hand Cut to Order
+                    </a>
+                  </h3>
+                </div>
+                <div class="collapse" id="servicesCollapseTwo" aria-labelledby="servicesHeadingTwo" data-parent="#accordionServices">
+                  <div class="card-body">
+                    We understand that fresh seafood isn't like other industries. We keep our fish whole and on ice as until we have orders against it. We have invested in a brand new ice slurry delivery system that allows us to keep our fish as fresh and cold as possible.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="card">
+                <div class="card-header" id="servicesHeadingThree">
+                  <h3 class="accordion-heading">
+                    <a href="#servicesCollapseThree" role="button" data-toggle="collapse" data-binded-content="#photography" aria-expanded="false" aria-controls="servicesCollapseThree" class="collapsed">
+                      <span class="accordion-indicator"></span>
+                      Quality Control
+                    </a>
+                  </h3>
+                </div>
+                <div class="collapse" id="servicesCollapseThree" aria-labelledby="servicesHeadingThree" data-parent="#accordionServices">
+                  <div class="card-body">
+                    Most of our team has been with us for many years, some more than 20 years, and they have learned right along side us. We go to great lengths to deliver the quality our customers expect on a case by case basis. We have a quality control team that constantly inspects shipments prior to shipping and will alert our sales team to any problems as soon as they arise. 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-7 order-md-2 order-1 ml-auto">
+
+            <!-- Images binded to accordion -->
+            <div class="cs-binded-content mb-4">
+              <div id="identity" class="cs-binded-item active">
+                <img class="d-block" src="assets/img/sea-food/home/services/001.jpg" alt="Standard">
+              </div>
+              <div id="web" class="cs-binded-item">
+                <img class="d-block" src="assets/img/sea-food/home/services/03.jpg" alt="Hand Cut">
+              </div>
+              <div id="photography" class="cs-binded-item">
+                <img class="d-block" src="assets/img/sea-food/home/services/02.jpg" alt="Candling">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Blogs -->
+<!--       <section id="portfolio" class="bg-secondary py-lg-6 py-5">
+        <div class="container py-3 py-lg-0">
+          <h3 class="h6 mb-2 text-uppercase">Read our latest News/Blog Articles</h3>
+          <div class="mb-lg-5 mb-4 d-flex justify-content-between">
+            <h2 class="h1 mb-0">Get to Know About</h2>
+            <div class="tns-custom-controls cs-controls-inverse mb-md-n4" id="tns-portfolio-controls" tabindex="0">
+              <button type="button" data-controls="prev" tabindex="-1">
+                <i class="cxi-arrow-left"></i>
+              </button>
+              <button type="button" data-controls="next" tabindex="-1">
+                <i class="cxi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container px-0">
+          <div class="cs-carousel mt-n2 mb-lg-5 mb-4">
+            <div class="cs-carousel-inner" data-carousel-options='{
+              "nav": false,
+              "controlsContainer": "#tns-portfolio-controls",
+              "responsive": {
+                "0": {
+                  "items": 1
+                },
+                "576": {
+                  "items": 2
+                },
+                "768": {
+                  "items": 3
+                }
+              }
+            }'>
+              <div class="rounded">
+                <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="blog-single.html">
+                  <div class="cs-portfolio-card-img">
+                    <img src="assets/img/sea-food/home/01.jpg" alt="Card image">
+                  </div>
+                  <div class="cs-portfolio-card-body">
+                    <h3 class="cs-portfolio-card-title">SEAFOOD SPOTLIGHT - Harry</h3>
+                    <span class="font-size-sm text-muted">Hunting Seafood</span>
+                  </div>
+                </a>
+              </div>
+              <div class="rounded">
+                <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="blog-single.html">
+                  <div class="cs-portfolio-card-img">
+                    <img src="assets/img/sea-food/home/b1.jpg" alt="Card image">
+                  </div>
+                  <div class="cs-portfolio-card-body">
+                    <h3 class="cs-portfolio-card-title">How to cook it properly?</h3>
+                    <span class="font-size-sm text-muted">Cooking Tips</span>
+                  </div>
+                </a>
+              </div>
+              <div class="rounded">
+                <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="blog-single.html">
+                  <div class="cs-portfolio-card-img">
+                    <img src="assets/img/sea-food/home/b3.jpg" alt="Card image">
+                  </div>
+                  <div class="cs-portfolio-card-body">
+                    <h3 class="cs-portfolio-card-title">How to identify the fresh fish?</h3>
+                    <span class="font-size-sm text-muted">Hunting Fish</span>
+                  </div>
+                </a>
+              </div>
+              <div class="rounded">
+                <a class="cs-portfolio-card-scale text-decoration-none mt-3 mx-3" href="blog-single.html">
+                  <div class="cs-portfolio-card-img">
+                    <img src="assets/img/sea-food/home/b2.jpg" alt="Card image">
+                  </div>
+                  <div class="cs-portfolio-card-body">
+                    <h3 class="cs-portfolio-card-title">Real Taste comes with passion!</h3>
+                    <span class="font-size-sm text-muted">Cooking Tips</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center align-items-center flex-md-row flex-column px-3">
+            <h3 class="mb-md-0 d-block">Fallen in love with our works?</h3>
+            <a href="fresh.html" class="ml-md-4 btn btn-lg btn-primary btn-pill">View Products</a>
+          </div>
+        </div>
+      </section>
+ -->
+
+
+
+      <!-- Testimonials 
+      <section class="container pb-5 pb-lg-4 mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="h6 mb-2 text-uppercase">Testimonials</h3>
+            <h2 class="h1 mb-lg-5 mb-4 pb-2">What they say about us</h2>
+
+            
+            <div class="tns-custom-controls cs-controls-inverse d-md-flex d-none mb-n5 mx-0" id="tns-custom-controls" tabindex="0">
+              <button class="mb-n2" type="button" data-controls="prev" tabindex="-1">
+                <i class="cxi-arrow-left"></i>
+              </button>
+              <button class="mb-n2" type="button" data-controls="next" tabindex="-1">
+                <i class="cxi-arrow-right"></i>
+              </button>
+            </div>
+
+            
+            <div class="cs-carousel cs-nav-outside">
+              <div class="cs-carousel-inner" data-carousel-options='{
+                "gutter": 15,
+                "controlsContainer": "#tns-custom-controls",
+                "autoHeight": true,
+                "responsive": {
+                  "0": {
+                    "nav": true
+                  },
+                  "768": {
+                    "nav": false
+                  }
+                }
+              }'>
+
+                
+                <blockquote>
+                  <img class="mb-4 rounded-circle" src="assets/img/sea-food/testimonials/01.jpg" width="72" alt="Author">
+                  <p>Quae, recusandae! Rem cumque a, dolorum error quis blanditiis exercitationem culpa enim harum! Praesentium repellendus placeat deleniti! Maxime deserunt inventore nihil magnam vero iure amet dolores enim soluta sint accusamus.</p>
+                  <footer>
+                    <h3 class="h6 mb-0">Courtney Alexander</h3>
+                    <span class="font-size-sm text-muted">Position, Company</span>
+                  </footer>
+                </blockquote>
+
+                
+                <blockquote>
+                  <img class="mb-4 rounded-circle" src="assets/img/sea-food/testimonials/02.jpg" width="72" alt="Author">
+                  <p>Eveniet molestias, iste excepturi optio libero aspernatur eius, eos nostrum sunt magnam ipsa impedit dignissimos est expedita, amet quidem et quod. Expedita porro doloremque sit at fugiat in animi obcaecati repellendus, quaerat quo soluta quisquam adipisci odit error repudiandae dolorum accusamus vel?</p>
+                  <footer>
+                    <h3 class="h6 mb-0">Eleanor Pena</h3>
+                    <span class="font-size-sm text-muted">Position, Company</span>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-lg-5 col-md-6 d-md-block d-none ml-lg-auto">
+            <img class="mb-lg-n6 rounded" src="assets/img/sea-food/home/hero-image/01.png" alt="Testimonials">
+          </div>
+        </div>
+      </section> -->
+
+      
+
+      
+      <!-- Achievements -->
+      <section class="container pt-lg-6 py-5 mt-4 mt-lg-3">
+        <h3 class="h6 mb-2 text-uppercase">Focused on</h3>
+        <div class="row">
+          <div class="col-xl-4 col-lg-5">
+            <h2 class="h1 mb-lg-5 mb-4">Safety and Sustainability </h2>
+          </div>
+          <div class="col-lg-7 mt-2 d-flex flex-sm-row flex-column align-items-start justify-content-sm-between flex-lg-nowrap flex-wrap ml-auto">
+            <div class="d-flex flex-sm-column justify-content-center mb-lg-0 mb-3 px-3">
+              <a href="https://www.msc.org/" class="cs-swap-image mr-sm-0 mr-3 mb-3">
+                <img src="assets/img/sea-food/logo/msc-ecolabel.png" class="cs-swap-to" height="50" style="height: 50px !important;" alt="Brand logo hover">
+                <img src="assets/img/sea-food/logo/msc-ecolabel.png" class="cs-swap-from" height="50" style="height: 50px !important;" alt="Brand logo">
+              </a>
+              <span class="d-block pt-1 font-size-sm text-dark text-nowrap">MSC Certified</span>
+            </div>
+            <div class="d-flex flex-sm-column justify-content-center mb-lg-0 mb-3 px-3">
+              <a href="https://www.sqfi.com/" class="cs-swap-image mr-sm-0 mr-3 mb-3">
+                <img src="assets/img/sea-food/logo/sqf.jpg" class="cs-swap-to" height="50" style="height: 50px !important;" alt="Brand logo hover">
+                <img src="assets/img/sea-food/logo/sqf.jpg" class="cs-swap-from" height="50" style="height: 50px !important;" alt="Brand logo">
+              </a>
+              <span class="d-block pt-1 font-size-sm text-dark text-nowrap">SQF Levl 2Certified</span>
+            </div>
+            <div class="d-flex flex-sm-column justify-content-center mb-lg-0 mb-3 px-3">
+              <a href="https://www.asc-aqua.org/" class="cs-swap-image mr-sm-0 mr-3 mb-3">
+                <img src="assets/img/sea-food/logo/asc.png" class="cs-swap-to" height="50" style="height: 50px !important;" alt="Brand logo hover">
+                <img src="assets/img/sea-food/logo/asc.png" class="cs-swap-from" height="50" style="height: 50px !important;" alt="Brand logo">
+              </a>
+              <span class="d-block pt-1 font-size-sm text-dark text-nowrap">ASC Certified</span>
+            </div>
+            <div class="d-flex flex-sm-column justify-content-center mb-lg-0 mb-3 px-3">
+              <a href="https://gmri.org/" class="cs-swap-image mr-sm-0 mr-3 mb-3">
+                <img src="assets/img/sea-food/logo/gmri.png" class="cs-swap-to" height="50" style="height: 50px !important;" alt="Brand logo hover">
+                <img src="assets/img/sea-food/logo/gmri.png" class="cs-swap-from" height="50" style="height: 50px !important;" alt="Brand logo">
+              </a>
+              <span class="d-block pt-1 font-size-sm text-dark text-nowrap">Gulf of Maine <br>Research Institute</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </main><!-- / Main content: .cs-page-wrapper -->
+
+
+    <!-- Footer -->
+    <footer class="cs-footer pt-3 bg-dark" style="background-color: #071d49 !important;">
+      <div class="container py-lg-5 py-4">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-12 order-md-1 order-2 mb-md-0 mb-4">
+            <h3 class="h6 mb-3 text-uppercase text-light">Have a question?</h3>
+            <ul class="nav nav-light flex-column">
+              <li class="nav-item mb-2">
+                <a href="tel:(405)555-0128" class="nav-link p-0 font-weight-normal">
+                  <span class="text-light">Call Us: </span>
+                  <br>617-428-9400
+                </a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="mailto:hello@example.com" class="nav-link p-0 font-weight-normal">
+                  <span class="text-light">Email: </span>
+                  sales@greateasternsfd.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 order-md-2 order-1 offset-lg-1 mb-md-0 mb-4">
+            <h3 class="h6 mb-3 text-uppercase text-light">Quick links</h3>
+            <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+              <li class="nav-item mb-2">
+                <a href="index.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Homepage</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="about.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">About</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="fresh.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Products</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="blog.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Blog</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="contacts.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-6 order-md-3 order-sm-4 order-3 offset-lg-1 mb-md-0 mb-4">
+            <h3 class="h6 mb-3 text-uppercase text-light">Follow us</h3>
+            <a href="https://www.facebook.com/people/Great-Eastern-Seafood/100090124032653/" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-facebook"></i>
+            </a>
+            <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-instagram"></i>
+            </a>
+            <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-twitter"></i>
+            </a>
+            <!-- <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-behance"></i>
+            </a>
+            <a href="#" class="social-btn sb-solid sb-round sb-light mb-2 mt-md-0 mt-sm-1">
+              <i class="cxi-dribbble"></i>
+            </a> -->
+          </div>
+          <!--<div class="col-md-3 col-sm-6 order-md-4 order-sm-3 order-4 mb-md-0 mb-4">
+            <h3 class="h6 mb-3 text-uppercase text-light">Subscribe</h3>
+            <form>
+              <div class="input-group-overlay input-group-light form-group mb-2 pb-1">
+                <input class="form-control appended-form-control" type="text" placeholder="Email address*">
+                <div class="input-group-append-overlay">
+                  <span class="input-group-text">
+                    <button class="btn btn-link bt-sm px-0" type="submit">
+                      <i class="cxi-arrow-right lead mt-n1"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <small class="form-text text-light">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</small>
+            </form>
+          </div><-->
+        </div>
+        <div class="d-flex justify-content-between mt-2 pt-1">
+          <div class="text-light">
+            <span class="d-block font-size-xs mb-1">
+              <span class="font-size-sm">&copy; </span>
+              Copyright © Great Eastern Seafood. <br>Designed by Ashdown Creative.
+            </span>
+          </div>
+          <div class="d-flex align-items-end">
+            <span class="d-sm-inline-block d-none text-light font-size-sm mr-3">Back to top</span>
+            <a class="btn-scroll-top position-static rounded-circle" href="#top" data-scroll>
+              <i class="btn-scroll-top-icon cxi-angle-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+    <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+</html>

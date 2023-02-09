@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Great Eastern Seafood</title>
+
+  <!-- SEO Meta Tags-->
+  <meta name="description" content="GE Seafood">
+  <meta name="keywords" content="great eastern seafood, seafood, fresh, frozen, fish, fishing, UK fishing">
+  <meta name="author" content="GE Seafood">
+
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon and Touch Icons-->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/sea-food/logo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/sea-food/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/sea-food/logo.png">
+  <meta name="msapplication-TileColor" content="#766df4">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Vendor Styles-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/tiny-slider/dist/tiny-slider.css" />
+  <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery.js/dist/css/lightgallery.min.css" />
+
+  <!-- Main Theme Styles + Bootstrap-->
+  <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+  <!-- Page loading styles-->
+  <style>
+    .cs-page-loading {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .4s .2s ease-in-out;
+      transition: all .4s .2s ease-in-out;
+      background-color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+
+    .cs-page-loading.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .cs-page-loading-inner {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: opacity .2s ease-in-out;
+      transition: opacity .2s ease-in-out;
+      opacity: 0;
+    }
+
+    .cs-page-loading.active>.cs-page-loading-inner {
+      opacity: 1;
+    }
+
+    .cs-page-loading-inner>span {
+      display: block;
+      font-size: 1rem;
+      font-weight: normal;
+      color: #787a80;
+    }
+
+    .cs-page-spinner {
+      display: inline-block;
+      width: 2.75rem;
+      height: 2.75rem;
+      margin-bottom: .75rem;
+      vertical-align: text-bottom;
+      background-color: #cfcfd1;
+      border-radius: 50%;
+      opacity: 0;
+      -webkit-animation: spinner .75s linear infinite;
+      animation: spinner .75s linear infinite;
+    }
+
+    @-webkit-keyframes spinner {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+
+    @keyframes spinner {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      50% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+      }
+    }
+  </style>
+
+  <!-- Page loading scripts-->
+  <script>
+    (function () {
+      window.onload = function () {
+        var preloader = document.querySelector('.cs-page-loading');
+        preloader.classList.remove('active');
+        setTimeout(function () {
+          preloader.remove();
+        }, 2000);
+      };
+    })();
+  </script>
+</head>
+
+<!-- Body-->
+
+<body>
+
+  <!-- Page loading spinner-->
+  <div class="cs-page-loading active">
+    <div class="cs-page-loading-inner">
+      <div class="cs-page-spinner"></div><span>Loading...</span>
+    </div>
+  </div>
+
+  <!-- Main content-->
+  <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
+  <main class="cs-page-wrapper position-relative">
+
+    <!-- Navbar -->
+    <!-- Remove .navbar-sticky class to detach .navbar from page scroll -->
+    <header class="cs-header navbar navbar-expand-md navbar-dark navbar-sticky navbar-floating">
+      <div class="container px-0 px-xl-3">
+        <a class="navbar-brand order-md-1 mr-md-5 mr-0 pr-lg-2" href="index.html">
+          <img class="navbar-brand-static" src="assets/img/sea-food/logo.png" alt="GE Seafood Logo" width="90">
+          <img class="navbar-brand-floating" src="assets/img/sea-food/logo.png" alt="GE Seafood Logo" width="70">
+        </a>
+        <div class="d-flex align-items-center order-md-3">
+          <a class="btn btn-primary btn-pill d-sm-inline-block d-none ml-3" href="contacts.html">Contact us</a>
+          <button class="navbar-toggler ml-1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse1"
+            aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <nav class="collapse navbar-collapse order-md-2" id="navbarCollapse1">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">About</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">History</a></li>
+                <li><a class="dropdown-item" href="about.html#val">Values</a></li>
+                <li><a class="dropdown-item" href="about.html#facilities">Facilities</a></li>
+                <li><a class="dropdown-item" href="about.html#team">Team</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" data-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="fresh.html">Fresh</a></li>
+                <li><a class="dropdown-item active" href="frozen.html">Frozen</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="assets/pdf/haccp.pdf" target="_blank">HCCP Letter</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/msc.pdf" target="_blank">MSC Certificate</a></li>
+                <li><a class="dropdown-item" href="assets/pdf/sqf.pdf" target="_blank">SQF Certificate</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blogs</a>
+            </li> -->
+            <li class="nav-item d-sm-none d-block">
+              <a class="nav-link" href="contacts.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <!-- Hero -->
+    <section class="jarallax d-flex align-items-stretch min-vh-100 bg-dark mb-2 mb-lg-0 py-5 py-lg-6" data-jarallax
+      data-speed="0.6">
+      <span class="bg-overlay opacity-60"></span>
+      <div class="jarallax-img" style="background-image: url(assets/img/sea-food/products/frozen.jpg);"></div>
+      <div class="container d-flex flex-column justify-content-between bg-overlay-content mt-5 py-3 pt-md-5 py-lg-3">
+        <div class="d-flex flex-sm-row flex-column align-items-sm-center justify-content-sm-between">
+          <ul class="nav nav-light">
+            <li class="nav-item mr-2">
+              <a class="nav-link d-inline-block mr-2 p-0 font-weight-normal" href="#">
+                Products
+              </a>
+              <span class="text-border">|</span>
+            </li>
+            <li class="nav-item mr-2">
+              <span class="text-light">Frozen</span>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex flex-column justify-content-between h-100 mt-4 mt-md-5 pt-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+              <h1 class="display-1 mb-4 pb-md-3 text-light">Frozen Seafood</h1>
+              <p class="lead text-light">We Freez the seafood for saving ultimate taste for our customers living far
+                away from us. Feel free to talk to us. </p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+              <a href="#section-goal" data-scroll class="font-size-sm font-weight-bold text-light text-decoration-none">
+                <i class="cxi-arrow-down h4 mt-n1 mr-2 mb-0 text-light align-middle"></i>
+                View products
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Project goal -->
+    <section class="container py-5 py-lg-6 text-center" id="section-goal">
+      <div class="row justify-content-center mb-lg-6 mb-5">
+        <div class="col-lg-8 col-md-10">
+          <h2 class="h6 mb-3 pb-1 text-uppercase">Our goal</h2>
+          <p class="h3 mb-lg-6 mb-5 pb-lg-4">Great Eastern Seafood’s Quality Control Program is a set of guidelines
+            designed by us to ensure that our customers are provided with consistent, quality products. Our program has
+            been designed using the HACCP model and all appropriate federal standards and regulations have all been
+            incorporated. The key factors in our plan are:</p>
+          <div class="row justify-content-between">
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2">Inspection</h3>
+            </div>
+            <span class="divider-vertical d-sm-block d-none"></span>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2">Temperature Control</h3>
+            </div>
+            <span class="divider-vertical d-sm-block d-none"></span>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2">Cleanliness</h3>
+            </div>
+            <span class="divider-vertical d-sm-block d-none"></span>
+            <div class="col-sm-3 col-6 mb-sm-0 mb-4 pb-sm-0 pb-1">
+              <h3 class="h6 mb-2 pb-1">Great Shipping Methods</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-lg-6 py-5 bg-secondary bg-size-contain bg-position-top-left bg-no-repeat"
+      style="background-image: url(assets/img/sea-food/portfolio/page-bg.png);">
+      <div class="container mt-5 py-3 pb-lg-0 pt-md-5 pt-lg-4">
+
+        <!-- Filterable grid container. IMPORTANT: it should wrap filters/sorters and target grid of items in order for plugin to work! -->
+        <div data-filter-grid>
+          <h3 class="h6 mb-2 text-uppercase">We are in love with</h3>
+          <div class="row align-items-end mb-lg-5 mb-4">
+            <div class="col-lg">
+              <h2 class="h1 mb-lg-0 mb-md-3 mb-2">Our Products</h2>
+            </div>
+          </div>
+
+          <!-- Filterable grid of items -->
+          <div class="row">
+            <div class="cs-grid-item branding col-md-8 pb-lg-2 mb-4" data-toggle="modal" data-target="#exampleModal">
+              <a class="cs-portfolio-card-scale">
+                <div class="cs-portfolio-card-img">
+                  <img src="assets/img/sea-food/portfolio/07.jpg" alt="Card image">
+                </div>
+                <div class="cs-portfolio-card-body">
+                  <h3 class="cs-portfolio-card-title">Product 1 Name</h3>
+                  <span class="font-size-sm text-muted">Small info</span>
+                </div>
+              </a>
+            </div>
+            <div class="cs-grid-item video-production col-md-4 col-sm-6 pb-lg-2 mb-4" data-toggle="modal" data-target="#exampleModal2">
+              <a class="cs-portfolio-card-scale cs-portfolio-card-video">
+                <div class="cs-portfolio-card-img">
+                  <img src="assets/img/sea-food/portfolio/05.jpg" alt="Card image">
+                </div>
+                <div class="cs-portfolio-card-body">
+                  <h3 class="cs-portfolio-card-title">Product 2 Name</h3>
+                  <span class="font-size-sm text-muted">Small info</span>
+                </div>
+              </a>
+            </div>
+            <div class="cs-grid-item web-design col-md-4 col-sm-6 pb-lg-2 mb-4"  data-toggle="modal" data-target="#exampleModal3">
+              <a class="cs-portfolio-card-scale">
+                <div class="cs-portfolio-card-img">
+                  <img src="assets/img/sea-food/portfolio/02.jpg" alt="Card image">
+                </div>
+                <div class="cs-portfolio-card-body">
+                  <h3 class="cs-portfolio-card-title">Product 3 Name</h3>
+                  <span class="font-size-sm text-muted">Small info</span>
+                </div>
+              </a>
+            </div>
+            <div class="cs-grid-item mobile-apps col-md-4 col-sm-6 pb-lg-2 mb-4" data-toggle="modal" data-target="#exampleModal4">
+              <a class="cs-portfolio-card-scale">
+                <div class="cs-portfolio-card-img">
+                  <img src="assets/img/sea-food/portfolio/04.jpg" alt="Card image">
+                </div>
+                <div class="cs-portfolio-card-body">
+                  <h3 class="cs-portfolio-card-title">Product 4 Name</h3>
+                  <span class="font-size-sm text-muted">Small info</span>
+                </div>
+              </a>
+            </div>
+            <div class="cs-grid-item branding col-md-4 col-sm-6 pb-lg-2 mb-4" data-toggle="modal" data-target="#exampleModal5">
+              <a class="cs-portfolio-card-scale">
+                <div class="cs-portfolio-card-img">
+                  <img src="assets/img/sea-food/portfolio/01.jpg" alt="Card image">
+                </div>
+                <div class="cs-portfolio-card-body">
+                  <h3 class="cs-portfolio-card-title">Product 5 Name</h3>
+                  <span class="font-size-sm text-muted">Small info</span>
+                </div>
+              </a>
+            </div>
+            <div class="cs-grid-item branding col-md-8 pb-lg-2 mb-4" data-toggle="modal" data-target="#exampleModal6">
+              <a class="cs-portfolio-card-scale">
+                <div class="cs-portfolio-card-img">
+                  <img src="assets/img/sea-food/portfolio/08.jpg" alt="Card image">
+                </div>
+                <div class="cs-portfolio-card-body">
+                  <h3 class="cs-portfolio-card-title">Product 6 Name</h3>
+                  <span class="font-size-sm text-muted">Small info</span>
+                </div>
+              </a>
+            </div>
+            <div class="cs-grid-item web-design col-md-4 col-sm-6 pb-lg-2 mb-4" data-toggle="modal" data-target="#exampleModal7">
+              <a class="cs-portfolio-card-scale">
+                <div class="cs-portfolio-card-img">
+                  <img src="assets/img/sea-food/portfolio/06.jpg" alt="Card image">
+                </div>
+                <div class="cs-portfolio-card-body">
+                  <h3 class="cs-portfolio-card-title">Product 7 Name</h3>
+                  <span class="font-size-sm text-muted">Small info</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+  </main><!-- / Main content: .cs-page-wrapper -->
+  <!-- Button trigger modal -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product 1 Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cs-portfolio-card-img">
+            <img src="assets/img/sea-food/portfolio/07.jpg" alt="Card image">
+          </div>
+          <div class="cs-portfolio-card-body">
+            <span class="font-size-sm text-muted">Detail Description... Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed rhoncus rutrum orci. Sed sit amet sem placerat, pulvinar lorem in, eleifend massa.
+              Nullam eget semper nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Aenean at condimentum urna, vitae tempor neque.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product 2 Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cs-portfolio-card-img">
+            <img src="assets/img/sea-food/portfolio/05.jpg" alt="Card image">
+          </div>
+          <div class="cs-portfolio-card-body">
+            <span class="font-size-sm text-muted">Detail Description... Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed rhoncus rutrum orci. Sed sit amet sem placerat, pulvinar lorem in, eleifend massa.
+              Nullam eget semper nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Aenean at condimentum urna, vitae tempor neque.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product 3 Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cs-portfolio-card-img">
+            <img src="assets/img/sea-food/portfolio/02.jpg" alt="Card image">
+          </div>
+          <div class="cs-portfolio-card-body">
+            <span class="font-size-sm text-muted">Detail Description... Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed rhoncus rutrum orci. Sed sit amet sem placerat, pulvinar lorem in, eleifend massa.
+              Nullam eget semper nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Aenean at condimentum urna, vitae tempor neque.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product 4 Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cs-portfolio-card-img">
+            <img src="assets/img/sea-food/portfolio/04.jpg" alt="Card image">
+          </div>
+          <div class="cs-portfolio-card-body">
+            <span class="font-size-sm text-muted">Detail Description... Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed rhoncus rutrum orci. Sed sit amet sem placerat, pulvinar lorem in, eleifend massa.
+              Nullam eget semper nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Aenean at condimentum urna, vitae tempor neque.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product 5 Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cs-portfolio-card-img">
+            <img src="assets/img/sea-food/portfolio/01.jpg" alt="Card image">
+          </div>
+          <div class="cs-portfolio-card-body">
+            <span class="font-size-sm text-muted">Detail Description... Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed rhoncus rutrum orci. Sed sit amet sem placerat, pulvinar lorem in, eleifend massa.
+              Nullam eget semper nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Aenean at condimentum urna, vitae tempor neque.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product 6 Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cs-portfolio-card-img">
+            <img src="assets/img/sea-food/portfolio/08.jpg" alt="Card image">
+          </div>
+          <div class="cs-portfolio-card-body">
+            <span class="font-size-sm text-muted">Detail Description... Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed rhoncus rutrum orci. Sed sit amet sem placerat, pulvinar lorem in, eleifend massa.
+              Nullam eget semper nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Aenean at condimentum urna, vitae tempor neque.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Product 7 Name</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="cs-portfolio-card-img">
+            <img src="assets/img/sea-food/portfolio/06.jpg" alt="Card image">
+          </div>
+          <div class="cs-portfolio-card-body">
+            <span class="font-size-sm text-muted">Detail Description... Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Sed rhoncus rutrum orci. Sed sit amet sem placerat, pulvinar lorem in, eleifend massa.
+              Nullam eget semper nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+              mus. Aenean at condimentum urna, vitae tempor neque.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="cs-footer pt-3 bg-dark" style="background-color: #071d49 !important;">
+    <div class="container py-lg-5 py-4">
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-12 order-md-1 order-2 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Want to hire us?</h3>
+          <ul class="nav nav-light flex-column">
+            <li class="nav-item mb-2">
+              <a href="tel:(405)555-0128" class="nav-link p-0 font-weight-normal">
+                <span class="text-light">Call: </span>
+                617-428-9400
+              </a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="mailto:hello@example.com" class="nav-link p-0 font-weight-normal">
+                <span class="text-light">Email: </span>
+                hello@example.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 order-md-2 order-1 offset-lg-1 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Quick links</h3>
+          <ul class="nav nav-light flex-md-column flex-sm-row flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Homepage</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="about.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">About</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="fresh.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Products</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="blog.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Blog</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="contacts.html" class="nav-link mr-md-0 mr-sm-4 p-0 font-weight-normal">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 order-md-3 order-sm-4 order-3 offset-lg-1 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Follow us</h3>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-facebook"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-instagram"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-twitter"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mr-2 mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-behance"></i>
+          </a>
+          <a href="#" class="social-btn sb-solid sb-round sb-light mb-2 mt-md-0 mt-sm-1">
+            <i class="cxi-dribbble"></i>
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6 order-md-4 order-sm-3 order-4 mb-md-0 mb-4">
+          <h3 class="h6 mb-3 text-uppercase text-light">Subscribe</h3>
+          <form>
+            <div class="input-group-overlay input-group-light form-group mb-2 pb-1">
+              <input class="form-control appended-form-control" type="text" placeholder="Email address*">
+              <div class="input-group-append-overlay">
+                <span class="input-group-text">
+                  <button class="btn btn-link bt-sm px-0" type="submit">
+                    <i class="cxi-arrow-right lead mt-n1"></i>
+                  </button>
+                </span>
+              </div>
+            </div>
+            <small class="form-text text-light">*Subscribe to our newsletter to receive early discount offers, updates
+              and new products info.</small>
+          </form>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between mt-2 pt-1">
+        <div class="text-light">
+          <span class="d-block font-size-xs mb-1">
+            <span class="font-size-sm">&copy; </span>
+            Copyright © Great Eastern Seafood.
+          </span>
+        </div>
+        <div class="d-flex align-items-end">
+          <span class="d-sm-inline-block d-none text-light font-size-sm mr-3">Back to top</span>
+          <a class="btn-scroll-top position-static rounded-circle" href="#top" data-scroll>
+            <i class="btn-scroll-top-icon cxi-angle-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Vendor scripts: js libraries and plugins-->
+  <script src="assets/vendor/jquery/dist/jquery.slim.min.js"></script>
+  <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <script src="assets/vendor/jarallax/dist/jarallax.min.js"></script>
+  <script src="assets/vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="assets/vendor/lightgallery.js/dist/js/lightgallery.min.js"></script>
+  <script src="assets/vendor/lg-video.js/dist/lg-video.min.js"></script>
+
+  <!-- Main theme script-->
+  <script src="assets/js/theme.min.js"></script>
+</body>
+
+</html>
